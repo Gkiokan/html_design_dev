@@ -1,0 +1,246 @@
+/* line 1, D:/_svr/html_design_dev/assets/css/init.scss */
+body {
+  background: #fff;
+  color: #fff;
+  width: 100%;
+  height: 100%; }
+
+/* line 11, D:/_svr/html_design_dev/assets/css/init.scss */
+.backgrounds {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  background-color: #111;
+  overflow: hidden; }
+  /* line 14, D:/_svr/html_design_dev/assets/css/init.scss */
+  .backgrounds div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    transition: all 5s; }
+  /* line 16, D:/_svr/html_design_dev/assets/css/init.scss */
+  .backgrounds .image {
+    background: url("http://inkhouse-media.net/wp-content/uploads/2015/11/abstract-black-wallpaper-black-polygon-with-red-edges-abstract-hd-wallpaper-1920x1080-1202.jpg") center center no-repeat;
+    background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/08/Cool-BMW-Desktop-Wallpapers.jpg");
+    background-size: cover;
+    z-index: 1;
+    transform: scale(1);
+    opacity: 0;
+    animation: move 15s infinite;
+    -moz-animation: move 15s infinite;
+    -webkit-animation: move 15s infinite; }
+  /* line 30, D:/_svr/html_design_dev/assets/css/init.scss */
+  .backgrounds .overlay {
+    background-image: url("http://inkhouse-media.net/wp-content/uploads/2015/11/abstract-black-wallpaper-black-polygon-with-red-edges-abstract-hd-wallpaper-1920x1080-1202.jpg");
+    z-index: 10;
+    opacity: .8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px; }
+
+/* line 39, D:/_svr/html_design_dev/assets/css/init.scss */
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff; }
+  /* line 44, D:/_svr/html_design_dev/assets/css/init.scss */
+  .nav .main_navigation {
+    list-stlye: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-align: right; }
+    /* line 51, D:/_svr/html_design_dev/assets/css/init.scss */
+    .nav .main_navigation li {
+      display: inline-block;
+      margin: 0px;
+      padding: 0px; }
+      /* line 56, D:/_svr/html_design_dev/assets/css/init.scss */
+      .nav .main_navigation li a {
+        display: inline-block;
+        padding: 15px 10px;
+        border: 0px solid red;
+        cursor: pointer;
+        color: dodgerblue;
+        text-decoration: none !important;
+        transition: all 0.5s; }
+        /* line 63, D:/_svr/html_design_dev/assets/css/init.scss */
+        .nav .main_navigation li a:hover {
+          background: rgba(0, 0, 0, 0.15);
+          color: #fff; }
+        /* line 65, D:/_svr/html_design_dev/assets/css/init.scss */
+        .nav .main_navigation li a span {
+          margin-left: 10px;
+          margin-right: 15px; }
+
+/* line 73, D:/_svr/html_design_dev/assets/css/init.scss */
+.main {
+  min-height: 200vh; }
+  /* line 76, D:/_svr/html_design_dev/assets/css/init.scss */
+  .main .main_logo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 50px auto;
+    margin-top: 100px;
+    background: url("http://wiki.w311.info/images/1/1d/BMW-Logo-aktuell.svg") center center no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 5px maroon; }
+  /* line 82, D:/_svr/html_design_dev/assets/css/init.scss */
+  .main .header {
+    display: inline-block; }
+    /* line 84, D:/_svr/html_design_dev/assets/css/init.scss */
+    .main .header .header_title {
+      margin-bottom: 10px; }
+      /* line 85, D:/_svr/html_design_dev/assets/css/init.scss */
+      .main .header .header_title span {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 17px;
+        background-color: #fff;
+        color: #222;
+        padding: 0px 8px;
+        z-index: 5; }
+        /* line 89, D:/_svr/html_design_dev/assets/css/init.scss */
+        .main .header .header_title span:nth-child(1) {
+          padding-right: 20px; }
+        /* line 90, D:/_svr/html_design_dev/assets/css/init.scss */
+        .main .header .header_title span:nth-child(2) {
+          margin-left: -10px;
+          padding-left: 20px;
+          color: dodgerblue;
+          top: 5px; }
+        /* line 92, D:/_svr/html_design_dev/assets/css/init.scss */
+        .main .header .header_title span:nth-child(2):after {
+          position: absolute;
+          top: -5px;
+          left: 2px;
+          content: '';
+          display: block;
+          background: #222;
+          width: 4px;
+          height: 27px;
+          z-index: 10;
+          transform: rotate(15deg);
+          border-radius: 5px; }
+    /* line 96, D:/_svr/html_design_dev/assets/css/init.scss */
+    .main .header .main_title {
+      font-family: 'Pacifico';
+      font-size: 50px;
+      line-height: 50px; }
+      /* line 98, D:/_svr/html_design_dev/assets/css/init.scss */
+      .main .header .main_title .select {
+        color: dodgerblue; }
+      /* line 99, D:/_svr/html_design_dev/assets/css/init.scss */
+      .main .header .main_title .title {
+        padding-left: 50px; }
+    /* line 102, D:/_svr/html_design_dev/assets/css/init.scss */
+    .main .header .sub_title {
+      display: block;
+      float: right;
+      line-height: 16px;
+      font-size: 14px;
+      position: relative;
+      margin-top: 20px; }
+      /* line 104, D:/_svr/html_design_dev/assets/css/init.scss */
+      .main .header .sub_title .arrow {
+        position: absolute;
+        left: -50px;
+        display: block;
+        font-size: 50px;
+        font-weight: 100; }
+  /* line 111, D:/_svr/html_design_dev/assets/css/init.scss */
+  .main .content {
+    margin-top: 100px; }
+
+/* line 118, D:/_svr/html_design_dev/assets/css/init.scss */
+.cachel {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 100px auto; }
+  /* line 121, D:/_svr/html_design_dev/assets/css/init.scss */
+  .cachel div {
+    display: block;
+    margin: 0px auto;
+    line-height: 190px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Pacifico';
+    font-size: 32px;
+    position: relative; }
+    /* line 126, D:/_svr/html_design_dev/assets/css/init.scss */
+    .cachel div:before, .cachel div:after {
+      position: absolute;
+      top: 0px;
+      transform: rotate(-45deg);
+      background: maroon;
+      width: 200px;
+      height: 200px;
+      display: block;
+      content: '';
+      z-index: -1;
+      opacity: 1;
+      background: url("https://c1.staticflickr.com/9/8250/8579260969_d230f06517.jpg") center center no-repeat;
+      background-size: cover; }
+    /* line 131, D:/_svr/html_design_dev/assets/css/init.scss */
+    .cachel div:after {
+      background: #000;
+      z-index: -1;
+      opacity: .6;
+      width: 190px;
+      height: 190px;
+      margin-top: 5px;
+      margin-left: 5px; }
+
+@keyframes move {
+  0% {
+    transform: translate(500px, 0px) scale(2); }
+  30% {
+    transform: translate(-500px, -100px) scale(2.8); }
+  50% {
+    transform: translate(50px, 7px) scale(1.4); }
+  75% {
+    transform: translate(0px, 0px) scale(1); }
+  100% {
+    transform: translate(500px, 0px) scale(2); } }
+
+@-moz-keyframes move {
+  0% {
+    transform: translate(500px, 0px) scale(2); }
+  30% {
+    transform: translate(-500px, -100px) scale(2.8); }
+  50% {
+    transform: translate(50px, 7px) scale(1.4); }
+  75% {
+    transform: translate(0px, 0px) scale(1); }
+  100% {
+    transform: translate(500px, 0px) scale(2); } }
+
+@-webkit-keyframes move {
+  0% {
+    transform: translate(500px, 0px) scale(2); }
+  30% {
+    transform: translate(-500px, -100px) scale(2.8); }
+  50% {
+    transform: translate(50px, 7px) scale(1.4); }
+  75% {
+    transform: translate(0px, 0px) scale(1); }
+  100% {
+    transform: translate(500px, 0px) scale(2); } }
+
+/*# sourceMappingURL=init.css.map */

@@ -1,0 +1,163 @@
+body { 
+    
+    background: #fff;
+    color: #fff;
+    width:100%; height:100%;
+    
+}
+
+
+
+.backgrounds {
+    position:fixed; top:0px; left:0px; right:0px; width:100%; height:100%; display:block; z-index:-1; background-color:#111; overflow:hidden;
+    
+    div { width:100%; height:100%; display:block; background-size:cover; background-position: center center; transition: all 5s; }
+    
+    .image { 
+        background: url('http://inkhouse-media.net/wp-content/uploads/2015/11/abstract-black-wallpaper-black-polygon-with-red-edges-abstract-hd-wallpaper-1920x1080-1202.jpg') center center no-repeat;
+        //background-image: url('http://icloudpicture.com/wp-content/uploads/2015/11/BMW-M3-4K-Wallpaper.jpeg');
+        //background-image: url('http://www.hdcarwallpapers.com/wallpapers/bmw_750li_d2forged-1440x900.jpg');
+        background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/08/Cool-BMW-Desktop-Wallpapers.jpg');
+        background-size:cover; 
+        z-index:1;
+        
+        transform: scale(1) ; opacity:0;
+        animation: move 15s infinite;
+        -moz-animation: move 15s infinite;
+        -webkit-animation: move 15s infinite;
+    }
+    
+    .overlay{ 
+        background-image: url('http://inkhouse-media.net/wp-content/uploads/2015/11/abstract-black-wallpaper-black-polygon-with-red-edges-abstract-hd-wallpaper-1920x1080-1202.jpg'); 
+        z-index:10; opacity:.8;  position: absolute; top:0px; left:0px; right:0px;
+    }
+    
+}
+
+
+
+.nav {
+    position:fixed; top:0px; left:0px; right:0px;
+    background: rgba(0,0,0,.15); color:#fff; 
+    //.container { position:fixed; top:0px; right:0px; left:0px; }
+    
+    .main_navigation {                 
+        
+        list-stlye:none;
+        display:block;
+        margin:0px; padding:0px;
+        text-align:right;
+        
+        li { 
+            display:inline-block;
+            margin:0px; padding:0px;
+            //float:right;
+            
+            a { 
+                display:inline-block; 
+                padding:15px 10px;
+                border:0px solid red;
+                cursor:pointer; color: dodgerblue;
+                text-decoration: none !important;
+                transition: all .5s;
+                &:hover { background: rgba(0,0,0,.15); color:#fff; }
+                
+                span { margin-left:10px; margin-right:15px; }
+            }
+        }
+    }
+}
+
+
+
+.main {
+    min-height:200vh;
+ 
+    .main_logo {         
+        width:120px; height:120px; display:block; margin:50px auto;  margin-top:100px; 
+        background: url('http://wiki.w311.info/images/1/1d/BMW-Logo-aktuell.svg') center center no-repeat; background-size:contain; 
+        border-radius:50%; box-shadow:0px 0px 40px 5px maroon;
+    }
+    
+    .header {
+        display:inline-block;
+        .header_title { margin-bottom:10px;
+            span { 
+                position: relative; display:inline-block; font-weight: bold; line-height:17px;
+                background-color: #fff; color: #222; padding:0px 8px;  z-index:5;
+                
+                &:nth-child(1) { padding-right:20px;  }
+                &:nth-child(2) { margin-left: -10px; padding-left:20px; color:dodgerblue; top:5px; }
+                
+                &:nth-child(2):after { position:absolute; top:-5px; left:2px; content:''; display:block; background: #222; width:4px; height:27px; z-index:10; transform: rotate(15deg); border-radius:5px; }
+            }
+        }
+        
+        .main_title { 
+            font-family: 'Pacifico'; font-size:50px; line-height: 50px; 
+            .select { color: dodgerblue; }
+            .title { padding-left:50px; }
+        }
+        
+        .sub_title {
+            display:block; float:right; line-height:16px; font-size:14px;   position: relative; margin-top:20px;            
+            .arrow { position: absolute; left:-50px; display:block; font-size:50px; font-weight: 100; }
+        }
+        
+        
+    }
+    
+    
+    .content { margin-top:100px; }
+    
+}
+
+
+
+// Cachel
+.cachel {
+    display:block; width:250px; height:250px; margin:100px auto;
+    
+    div { 
+        display:block; margin:0px auto;
+        line-height:190px; height:200px; width:200px; text-align:center;
+        font-family: 'Pacifico'; font-size:32px; position: relative;
+    
+        &:before, &:after { 
+            position:absolute; top:0px; transform:rotate(-45deg); background:maroon; width:200px; height:200px; display:block; content:'';  z-index:-1; opacity: 1; 
+            background: url('https://c1.staticflickr.com/9/8250/8579260969_d230f06517.jpg') center center no-repeat; background-size:cover;
+        }
+        
+        &:after { 
+            background: #000; z-index:-1; opacity:.6; width:190px; height:190px; margin-top:5px; margin-left:5px; 
+        }
+    }
+}
+
+
+
+// keyframes
+
+@keyframes move {
+    0% { transform: translate(500px, 0px) scale(2.0); }    
+    30% { transform: translate(-500px, -100px) scale(2.8); }    
+    50% { transform: translate(50px, 7px) scale(1.4); }    
+    75% { transform: translate(000px, 00px) scale(1); }   
+    100% { transform: translate(500px, 0px) scale(2.0); }    
+}
+
+@-moz-keyframes move {
+    0% { transform: translate(500px, 0px) scale(2.0); }    
+    30% { transform: translate(-500px, -100px) scale(2.8); }    
+    50% { transform: translate(50px, 7px) scale(1.4); }    
+    75% { transform: translate(000px, 00px) scale(1); }   
+    100% { transform: translate(500px, 0px) scale(2.0); }    
+}
+
+@-webkit-keyframes move {
+    0% { transform: translate(500px, 0px) scale(2.0); }    
+    30% { transform: translate(-500px, -100px) scale(2.8); }    
+    50% { transform: translate(50px, 7px) scale(1.4); }    
+    75% { transform: translate(000px, 00px) scale(1); }   
+    100% { transform: translate(500px, 0px) scale(2.0); }    
+}
